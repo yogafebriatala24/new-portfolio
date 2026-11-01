@@ -41,9 +41,12 @@ export async function POST(req: Request) {
     const body = await req.json();
     const newExp = await ExperienceModel.create(body);
     return NextResponse.json(newExp, { status: 201 });
-  } catch (error) {
+  } catch (error: any) {
     console.error("POST /api/experiences error:", error);
-    return NextResponse.json({ error: "Failed to create experience" }, { status: 500 });
+    return NextResponse.json(
+      { error: error?.message || "Failed to create experience" },
+      { status: 500 }
+    );
   }
 }
 
@@ -61,16 +64,19 @@ export async function PUT(req: Request) {
     }
 
     const body = await req.json();
-    const { _id, ...updateData } = body;
+    const { _id, createdAt, updatedAt, __v, ...updateData } = body;
     if (!_id) {
       return NextResponse.json({ error: "Missing _id" }, { status: 400 });
     }
 
     const updated = await ExperienceModel.findByIdAndUpdate(_id, updateData, { new: true });
     return NextResponse.json(updated);
-  } catch (error) {
+  } catch (error: any) {
     console.error("PUT /api/experiences error:", error);
-    return NextResponse.json({ error: "Failed to update experience" }, { status: 500 });
+    return NextResponse.json(
+      { error: error?.message || "Failed to update experience" },
+      { status: 500 }
+    );
   }
 }
 
