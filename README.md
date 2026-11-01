@@ -46,17 +46,7 @@ Menyajikan antarmuka vCard modern yang elegan dengan transisi mulus, responsive 
    npm install
    ```
 
-3. **Setup environment variables** (`.env.local`):
-   ```env
-   MONGODB_URI="your-mongodb-atlas-uri"
-   CLOUDINARY_URL="cloudinary://<key>:<secret>@<cloud_name>"
-   NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME="<cloud_name>"
-   CLOUDINARY_API_KEY="<key>"
-   CLOUDINARY_API_SECRET="<secret>"
-   ADMIN_PASSWORD="admin123"
-   ```
-
-4. **Jalankan development server**:
+3. **Jalankan development server**:
    ```bash
    npm run dev
    ```
