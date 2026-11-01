@@ -1,8 +1,8 @@
 # Yoga Febriatala - Personal Portfolio & CMS
 
-Website portofolio interaktif dan modern karya **Yoga Febriatala** (Software Engineer & Web Developer) yang dibangun dengan arsitektur modern Next.js 16, React 19, Tailwind CSS v4, Mongoose (MongoDB Atlas), dan Cloudinary Image CDN. 
+Website portofolio interaktif dan modern karya **Yoga Febriatala** (Software Engineer & Web Developer) yang dibangun dengan arsitektur modern Next.js 16, React 19, Tailwind CSS v4, Mongoose (MongoDB Atlas), dan Cloudinary Image CDN.
 
-Mengusung tema desain profesional terinspirasi dari **BreezyCV vCard (Dark Theme)** dengan transisi mulus, responsive mobile navigation, serta panel CMS admin interaktif untuk mengelola proyek, pengalaman kerja, dan biodata profil.
+Menyajikan antarmuka vCard modern yang elegan dengan transisi mulus, responsive mobile navigation, serta panel CMS admin interaktif untuk mengelola proyek, pengalaman kerja, dan biodata profil.
 
 ---
 
